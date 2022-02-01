@@ -589,6 +589,7 @@ line-height: 1.5;
   .cont {
     width: 350px;
   }
+
   nav .cont .links ul{
     width: 0;
     transition: linear 0.3s;
@@ -625,6 +626,12 @@ line-height: 1.5;
   }
   nav .cont .links i:hover ~ ul li a:hover {
     color: var(--main-color);
+  }
+  nav .cont .logo h2{
+    font-size: 25px;
+  }
+  nav .cont .logo h2 img {
+    width: 25px;
   }
 }
 
