@@ -2,7 +2,7 @@
 :root {
   --main-color: #367cff;
   --paragraph-color: #707070;
-  --second-color: #202020;
+  --second-color: #303030;
   --transper: #367cff44;
   --main-padding: 50px;
   --sec-padding: 20px;
@@ -66,43 +66,50 @@ body {
 
 nav {
     width: 100%;
-    min-height: 70px;
-    box-shadow: 0 5px 10px -10px #000;
-    z-index: 3;
-}
-nav .cont {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-nav .cont .logo h2{
-    display: flex;
-    align-items: center;
+    height: 70px;
+    background: white;
     line-height: 70px;
+    padding: 0 8px;
+    border-bottom: 1px solid #eee;
+}
+nav .logo {
+    float: left;
+}
+nav .logo h2 {
+    font-size: 30px;
+    letter-spacing: 1px;
     color: var(--second-color);
     font-weight: 600;
-    font-size: 30px;
 }
-nav .cont .logo h2 img {
-    margin-right: 15px;
-    width: 30px;
+nav .logo h2 span {
+    color: var(--main-color);
 }
-nav .cont .links ul li {
+nav .links ul {
+    float: right;
+}
+nav .links ul li {
     list-style: none;
-    float: left;
-    padding: 10px;
-    font-size: 18px;
+    display: inline-block;
 }
-nav .cont .links ul li a{
+nav .links ul li a{
+    text-decoration: none;
     color: var(--second-color);
+    font-size: 18px;
+    padding:10px 15px;
 }
-nav .cont .links i{
-    padding: 10px;
+nav .links ul li a.active,
+nav .links ul li a:hover{
+    color: var(--main-color);
+}
+.checkbtn {
+    color: var(--second-color);
+    cursor: pointer;
+    font-size: 20px;
+    float: right;
     display: none;
 }
-nav .cont .links ul li.active a,
-nav .cont .links ul li a:hover {
-    color: var(--main-color);
+#check {
+    display: none;
 }
 
 /* end nav */
@@ -589,49 +596,36 @@ line-height: 1.5;
   .cont {
     width: 350px;
   }
-
-  nav .cont .links ul{
-    width: 0;
-    transition: linear 0.3s;
-    -webkit-transition: linear 0.3s;
-    -moz-transition: linear 0.3s;
-    -ms-transition: linear 0.3s;
-    -o-transition: linear 0.3s;
-    z-index: -1;
-}
-  nav .cont .links ul li {
-    display: none;
-  }
-  nav .cont .links i {
+  .checkbtn {
     display: block;
-    font-size: 25px;
   }
-  nav .cont .links i:hover {
+  .checkbtn:hover {
     color: var(--main-color);
   }
-  nav .cont .links i:hover ~ ul {
-    display: block;
-    background-color: #fafafa;
+  nav .logo h2 {
+    font-size: 20px;
+  }
+  nav .links ul {
     width: 100%;
-    height: calc(100vh - 70px);
-    position: absolute;
+    height: 100vh;
+    background: #f5f5f5;
+    position: fixed;
     top: 70px;
-    left: 0;
-  }
-  nav .cont .links i:hover ~ ul li {
-    display: block;
-    width: 100%;
+    left: -100%;
     text-align: center;
-    margin: 25px 0;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+  nav .links ul li {
+    display: block;
+    margin: 50px 0 ;
+    line-height: 20px;
   }
-  nav .cont .links i:hover ~ ul li a:hover {
-    color: var(--main-color);
-  }
-  nav .cont .logo h2{
-    font-size: 25px;
-  }
-  nav .cont .logo h2 img {
-    width: 25px;
+  #check:checked ~ ul {
+    left: 0;
   }
 }
 
