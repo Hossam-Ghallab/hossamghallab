@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- icon -->
-    <link rel="icon" href="img/logo.png">
+    <link rel="icon" href="">
     <title>Hossam-Ghallab | Portoflio</title>
   </head>
   <body>
@@ -35,8 +35,8 @@
             <li><a href="#about">About Me</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -52,7 +52,7 @@
           <h2>Hello, I am Hossam Ghallab</h2>
           <h3>Front-End Developer</h3>
           <p>High experience in web design and development and I have been working as a freelancer for more than a year</p>
-          <a href="#">Download CV</a>
+          <a href="#">Download CV <i class="fas fa-arrow-alt-circle-down"></i></a>
         </div>
         <div class="image">
           <img src="img/undraw_hello_re_3evm.svg" alt="">
@@ -121,49 +121,6 @@
 
     <!-- Start Skills -->
 
-    <!-- <section class="skills">
-      <div class="cont">
-        <h2 class="heading">Skills</h2>
-        <div class="skill">
-          <div class="image">
-            <img src="img/undraw_percentages_re_a1ao.svg" alt="">
-          </div>
-          <div class="info">
-            <div class="info_2">
-              <h3>Photoshop</h3>
-              <div class="hr">
-                <span  style="width:95%;"></span>
-              </div>
-            </div>
-            <div class="info_2">
-              <h3>HTML</h3>
-              <div class="hr">
-                <span  style="width:95%;"></span>
-              </div>
-            </div>
-            <div class="info_2">
-              <h3>CSS</h3>
-              <div class="hr">
-                <span  style="width:95%;"></span>
-              </div>
-            </div>
-            <div class="info_2">
-              <h3>JavaScript</h3>
-              <div class="hr">
-                <span  style="width:95%;"></span>
-              </div>
-            </div>
-            <div class="info_2">
-              <h3>Bootstrap</h3>
-              <div class="hr" style="width:95%;">
-                <span  style="width:95%;"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
     <div class="skills" id="skills">
       <div class="cont">
           <h2 class="heading">Skills</h2>
@@ -215,7 +172,92 @@
       </div>
   </div>
 
-    <!-- End Services -->
+    <!-- End SKills -->
+
+    <!-- Start Portfolio -->
+
+  <div class="portfolio" id="portfolio">
+    <div class="cont">
+      <h2 class="heading">portfolio</h2>
+      <div class="info">
+        <div class="img">
+            <a href="https://hossam-ghallab.github.io/leonagency/">
+                <img src="https://via.placeholder.com/400x600/AAA/FFF" alt="">
+            </a>
+            <div class="text">
+                <p><a href="https://hossam-ghallab.github.io/leonagency/" target="_blank">View The Website <i class="fas fa-arrow-right"></i></a></p>
+            </div>
+        </div>
+        <div class="img">
+            <a href="https://hossam-ghallab.github.io/leonagency/">
+                <img src="https://via.placeholder.com/400x600/AAA/FFF" alt="">
+            </a>
+            <div class="text">
+                <p><a href="https://hossam-ghallab.github.io/leonagency/" target="_blank">View The Website <i class="fas fa-arrow-right"></i></a></p>
+            </div>
+        </div>
+        <div class="img">
+            <a href="https://hossam-ghallab.github.io/leonagency/">
+                <img src="https://via.placeholder.com/400x600/AAA/FFF" alt="">
+            </a>
+            <div class="text">
+                <p><a href="https://hossam-ghallab.github.io/leonagency/" target="_blank">View The Website <i class="fas fa-arrow-right"></i></a></p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- End Portfolio -->
+
+    <!-- Start Contact -->
+
+    <div class="contact" id="contact">
+      <div class="cont">
+        <h2 class="heading">Contact</h2>
+        <div class="main">
+          <div class="forms">
+            <form action="https://formsubmit.co/your@email.com" method="POST">
+              <input class="inp_1" type="text" name="name" placeholder="Name">
+              <input class="inp_2" type="mail" name="email" placeholder="Email">
+              <textarea class="inp_3" id="textarea" onkeyup="charCount();" name="textarea_description" rows="4" cols="37" maxlength="100" minlength="3" placeholder="Write your opinion here..."></textarea>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+          <div class="image">
+            <img src="img/undraw_contact_us_re_4qqt.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Contact -->
+
+    <!-- Start Footer -->
+
+    <footer>
+      <div class="cont">
+        <div class="main">
+          <div class="social">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+            <a href=""><i class="fab fa-github"></i></a>
+            <a href=""><i class="fab fa-tiktok"></i></a>
+            <a href=""><i class="fab fa-telegram"></i></a>
+            <a href=""><i class="fab fa-codepen"></i></a>
+            <a href=""><i class="fab fa-whatsapp"></i></a>
+          </div>
+          <div class="copy">
+            <p>Made With <i class="fas fa-heart"></i> By <a href="#">Hossam Ghallab</a> &copy; 2022</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- End Footer -->
 
     </body>
 </html>
