@@ -167,6 +167,7 @@ nav .links ul li a:hover{
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
+  border: 1px solid var(--main-color);
 }
 .home .cont .info a:hover{
   color: var(--main-color);
@@ -295,7 +296,126 @@ nav .links ul li a:hover{
 
 /* start skills */
 
+/* .skills {
+  padding: var(--main-padding) 0;
+  background: #efefef;
+}
+.skills .skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skills .skill .image img {
+  width: 500px;
+}
+.skills .skill .info {
+  width:400px;
+}
+.skills .skill .info .info_2 h3 {
+  color: var(--second-color);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: 600;
+  display: inline-block;
+}
+.skills .skill .info .info_2 .hr {
+  background-color: var(--transper);
+  height: 10px;
+  min-width: 300px;
+  max-width: 400px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.skills .skill .info .info_2 .hr span {
+  display: block;
+  background-color: var(--main-color);
+  height: 100%;
+  position: relative;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.skills .skill .info .info_2 .hr::before {
+  content: '';
+  position: absolute;
+  left: 95%;
+  top: -40px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.skills .skill .info .info_2 .hr::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  background: var(--main-color);
+} */
 
+.skills {
+  padding: var(--main-padding) 0;
+  background-color: #f1f1f1;
+}
+.skills .flex .info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skills .info .data .text {
+  margin-bottom: 40px;
+}
+.skills .info .data .text h3 {
+  margin-bottom: 15px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.skills .info .data .text .prog {
+  background-color: var(--transper);
+  height: 10px;
+  width: 400px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.skills .info .data .text .prog span {
+  display: block;
+  background-color: var(--main-color);
+  height: 100%;
+  position: relative;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.skills .info .data .text .prog span::before {
+  content: attr(data-progress);
+  position: absolute;
+  /* background-color: var(--main-color); */
+  color: var(--second-color);
+  top: -40px;
+  right: 0px;
+  padding: 4px 0;
+  width: 50px;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-size: 17px;
+}
+.skills  img {
+  width: 500px;
+}
 
 /* end skills */
 
@@ -359,6 +479,7 @@ nav .links ul li a:hover{
   #check:checked ~ ul {
     left: 0;
   }
+  .skills  img,
   .about .data .image img ,
   .home .cont .image img {
     display: none;
@@ -375,9 +496,12 @@ nav .links ul li a:hover{
   .home .cont .info a {
     font-size:18px;
   }
-  /* .about .data .info {
-    text-align: center;
-  } */
+  .heading {
+    font-size: 35px;
+  }
+  .skills .info .data .text .prog {
+    width: 300px;
+  }
 }
 
 /* small */
@@ -385,10 +509,12 @@ nav .links ul li a:hover{
   .cont {
     width: 750px;
   }
+  .skills  img,
   .about .data .image img,
   .home .cont .image img {
     display: none;
   }
+  .skills .flex .info,
   .about .data {
     justify-content: center;
     flex-direction: row;
@@ -407,10 +533,13 @@ nav .links ul li a:hover{
   .cont {
     width: 1170px;
   }
+  .skills  img,
+  .skills .skill .image img,
   .about .data .image img,
   .home .cont .image img {
     display: block;
   }
+  .skills .flex .info,
   .about .data {
     justify-content: space-between;
   }
