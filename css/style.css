@@ -563,20 +563,24 @@ footer .main .social a:nth-child(10) i:hover {
   .checkbtn {
     display: block;
   }
-  .checkbtn:hover {
-    color: var(--main-color);
+  .checkbtn {
+    color: white;
   }
   nav {
     position: fixed;
     z-index: 999;
+    background-color: var(--main-color);
+    border: 0;
   }
+  nav .logo h2 span,
   nav .logo h2 {
     font-size: 23px;
+    color: white;
   }
   nav .links ul {
     width: 100%;
     height: 100vh;
-    background: #f5f5f5;
+    background: var(--second-color);
     position: fixed;
     top: 70px;
     left: -100%;
@@ -591,6 +595,9 @@ footer .main .social a:nth-child(10) i:hover {
     display: block;
     margin: 50px 0 ;
     line-height: 20px;
+  }
+  nav .links ul li a {
+    color: #ddd;
   }
   #check:checked ~ ul {
     left: 0;
