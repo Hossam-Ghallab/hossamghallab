@@ -545,6 +545,18 @@ footer .main .social a:nth-child(5) i:hover {
 
 /* End Footer */
 
+.ang-up i {
+  position: fixed;
+  left: 95%;
+  top: 95%;
+  background-color: var(--main-color);
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  transform: translate(-50%, -50%);
+}
 
 
 /* media */
@@ -649,6 +661,9 @@ footer .main .social a:nth-child(5) i:hover {
   }
   nav .logo .hlarge {
     display: none;
+  }
+  .ang-up i {
+    left: 90%;
   }
 }
 
