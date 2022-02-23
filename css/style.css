@@ -678,7 +678,7 @@ footer .main .social a:nth-child(5) i:hover {
   .home .cont .image img {
     display: none;
   }
-  .contact .main .forms,
+  .contact .main ,
   .skills .flex .info,
   .about .data {
     justify-content: center;
@@ -708,6 +708,7 @@ footer .main .social a:nth-child(5) i:hover {
   .home .cont .image img {
     display: block;
   }
+  .contact .main,
   .skills .flex .info,
   .about .data {
     justify-content: space-between;
